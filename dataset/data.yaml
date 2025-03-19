@@ -1,0 +1,5 @@
+path: /home/baizy25/projects/yolo/dataset
+train: images/train
+val: images/val
+nc: 1
+names: ['pothole']
