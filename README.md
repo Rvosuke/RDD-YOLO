@@ -2,6 +2,8 @@
 
 本项目使用YOLO模型对道路坑洼等路面缺陷进行检测。
 
+![tearse_figure](sample_visualizations.png)
+
 ## 文件结构
 
 ```
