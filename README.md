@@ -1,17 +1,11 @@
-# 坑洼检测项目 - 基于YOLOv8
+# 路面缺陷检测
 
-本项目使用YOLO模型对道路坑洼进行检测。
-
-## 数据集
-
-- 类型: YOLO格式
-- 类别: 坑洼(pothole)
-- 位置: `./dataset/`
+本项目使用YOLO模型对道路坑洼等路面缺陷进行检测。
 
 ## 文件结构
 
 ```
-├── data.yaml          # 数据集配置文件
+├── dataset/data.yaml  # 数据集配置文件
 ├── check_data.py      # 检查并可视化数据集
 ├── train.py           # 模型训练脚本
 ├── validate.py        # 模型验证脚本
@@ -23,10 +17,14 @@
 
 ### 1. 数据准备
 
-数据应当已经准备好，格式为COCO格式的JSON文件。
+本项目代码仓库中已经包含了**路面缺陷检测**的部分可用数据集：
+- 类别: 坑洼(pothole)
+- 类型: YOLO格式
+- 位置: `./dataset/`
 
 ### 2. 训练模型
 
+以下为使用`yolov8s`为例进行模型训练：
 ```bash
 python train.py --model yolov8s --data pothole_data.yaml --epochs 100 --batch-size 16
 ```
