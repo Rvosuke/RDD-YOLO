@@ -1,5 +1,4 @@
 # Ignore the runs directory
-runs/
 
 # Ignore the checkpoints directory
 checkpoints/

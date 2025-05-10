@@ -1,4 +1,4 @@
-path: /home/baizy25/projects/yolo/dataset
+path: /home/baizy25/programs/yolo/RDD-YOLO/dataset
 train: images/train
 val: images/val
 nc: 1
